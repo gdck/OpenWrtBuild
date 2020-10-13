@@ -19,35 +19,37 @@
 #=================================================
 #=================================================
 # 获取luci-app-adguardhome
-git clone https://github.com/gdck/luci-app-adguardhome package/diy-packages/luci-app-adguardhome
-#git clone https://github.com/rufengsuixing/luci-app-adguardhome package/diy-packages/luci-app-adguardhome
+#git clone https://github.com/gdck/luci-app-adguardhome package/diy-packages/luci-app-adguardhome
+git clone https://github.com/rufengsuixing/luci-app-adguardhome package/lean/luci-app-adguardhome
+# 获取
+git clone https://github.com/gdck/openwrt-packages/tree/packages/luci-app-smartdns package/lean/luci-app-smartdns
 # 获取应用过滤luci-app-oaf
-git clone https://github.com/destan19/OpenAppFilter package/diy-packages/luci-app-oaf
+git clone https://github.com/destan19/OpenAppFilter package/lean/luci-app-oaf
 # 获取luci-app-cupsd
-git clone https://github.com/gdck/luci-app-cupsd package/diy-packages/luci-app-cupsd
+git clone https://github.com/gdck/luci-app-cupsd package/lean/luci-app-cupsd
 # 获取hello world和依赖
 #git clone https://github.com/jerrykuku/lua-maxminddb package/diy-packages/helloworld/lua-maxminddb
 #git clone https://github.com/jerrykuku/luci-app-vssr package/diy-packages/helloworld/luci-app-vssr
 # 获取passwall
 #git clone -b 3.6-40 https://github.com/liuran001/luci-app-passwall package/diy-packages/passwall
-git clone -b https://github.com/gdck/luci-app-passwall-plus package/diy-packages/passwall
+git clone -b https://github.com/gdck/luci-app-passwall-plus package/lean/passwall
 # 获取Lienol-package
 git clone https://github.com/Lienol/openwrt-package package/diy-packages/lienol
 # 获取luci-app-diskman和依赖
 mkdir -p package/diy-packages/luci-app-diskman && \
 mkdir -p package/diy-packages/parted && \
-wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Makefile -O package/diy-packages/luci-app-diskman/Makefile
-wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Parted.Makefile -O package/diy-packages/parted/Makefile
+wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Makefile -O package/lean/luci-app-diskman/Makefile
+wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Parted.Makefile -O package/lean/parted/Makefile
 # 获取luci-app-serverchan
-git clone https://github.com/tty228/luci-app-serverchan package/diy-packages/luci-app-serverchan
+git clone https://github.com/tty228/luci-app-serverchan package/lean/luci-app-serverchan
 # 获取luci-app-control-weburl
-git clone https://github.com/gdck/luci-app-control-weburl package/diy-packages/luci-app-control-weburl
+git clone https://github.com/gdck/luci-app-control-weburl package/lean/luci-app-control-weburl
 # 获取luci-app-wrtbwmon-zh
 rm -rf luci-app-wrtbwmon
 #git clone https://github.com/gdck/luci-app-wrtbwmon
-git clone https://github.com/brvphoenix/luci-app-wrtbwmon-zh package/diy-packages/luci-app-wrtbwmon
+git clone https://github.com/brvphoenix/luci-app-wrtbwmon-zh package/lean/luci-app-wrtbwmon
 # 获取luci-app-koolproxy
-git clone https://github.com/gdck/luci-app-koolproxy package/diy-packages/luci-app-koolproxy
+git clone https://github.com/gdck/luci-app-koolproxy package/lean/luci-app-koolproxy
 # 获取luci-app-openclash 编译po2lmo
 #git clone -b master https://github.com/vernesong/OpenClash package/diy-packages/openclash
 #pushd package/diy-packages/openclash/luci-app-openclash/tools/po2lmo
