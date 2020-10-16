@@ -19,8 +19,8 @@
 #=================================================
 #=================================================
 # 获取luci-app-adguardhome
-#git clone https://github.com/gdck/luci-app-adguardhome package/diy-packages/luci-app-adguardhome
-git clone https://github.com/rufengsuixing/luci-app-adguardhome package/lean/luci-app-adguardhome
+git clone https://github.com/gdck/luci-app-adguardhome package/diy-packages/luci-app-adguardhome
+#git clone https://github.com/rufengsuixing/luci-app-adguardhome package/lean/luci-app-adguardhome
 # 获取
 git clone https://github.com/gdck/openwrt-packages/tree/packages/luci-app-smartdns package/lean/luci-app-smartdns
 # 获取应用过滤luci-app-oaf
@@ -46,7 +46,7 @@ git clone https://github.com/tty228/luci-app-serverchan package/lean/luci-app-se
 git clone https://github.com/gdck/luci-app-control-weburl package/lean/luci-app-control-weburl
 # 获取luci-app-wrtbwmon-zh
 rm -rf luci-app-wrtbwmon
-#git clone https://github.com/gdck/luci-app-wrtbwmon
+#git clone https://github.com/gdck/luci-app-wrtbwmon  package/lean/luci-app-wrtbwmon
 git clone https://github.com/brvphoenix/luci-app-wrtbwmon-zh package/lean/luci-app-wrtbwmon
 # 获取luci-app-koolproxy
 git clone https://github.com/gdck/luci-app-koolproxy package/lean/luci-app-koolproxy
