@@ -21,7 +21,7 @@
 # 获取luci-app-adguardhome
 git clone https://github.com/gdck/luci-app-adguardhome package/diy-packages/luci-app-adguardhome
 #git clone https://github.com/rufengsuixing/luci-app-adguardhome package/lean/luci-app-adguardhome
-# 获取
+# 获取luci-app-smartdns
 git clone https://github.com/gdck/openwrt-packages/tree/packages/luci-app-smartdns package/lean/luci-app-smartdns
 # 获取应用过滤luci-app-oaf
 git clone https://github.com/destan19/OpenAppFilter package/lean/luci-app-oaf
@@ -34,7 +34,11 @@ git clone https://github.com/gdck/luci-app-cupsd package/lean/luci-app-cupsd
 #git clone -b 3.6-40 https://github.com/liuran001/luci-app-passwall package/diy-packages/passwall
 git clone -b https://github.com/gdck/luci-app-passwall-plus package/lean/passwall
 # 获取Lienol-package
-git clone https://github.com/Lienol/openwrt-package package/diy-packages/lienol
+#git clone https://github.com/Lienol/openwrt-package package/diy-packages/lienol
+# 获取gdck-package
+git clone https://github.com/gdck/openwrt-packages package/gdck
+# 获取可道云 luci-app-kodexplorer
+#git clone https://github.com/silime/luci-app-kodexplorer package/lean/luci-app-kodexplorer
 # 获取luci-app-diskman和依赖
 mkdir -p package/diy-packages/luci-app-diskman && \
 mkdir -p package/diy-packages/parted && \
