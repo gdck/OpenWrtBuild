@@ -17,9 +17,13 @@
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 #git clone https://github.com/kenzok8/openwrt-packages package/op-packages
 #=================================================
+#本地启动脚本
+#启动脚本插入到 'exit 0' 之前即可随系统启动运行。
+sed -i '3i,/etc/init.d/samba stop' ./package/base-files/files/etc/rc.local #停止samba服务
+sed -i '4i,/etc/init.d/samba disable' ./package/base-files/files/etc/rc.local #禁止samba服务开机自动
 #=================================================
 # 获取luci-app-adguardhome
-git clone https://github.com/gdck/luci-app-adguardhome package/diy-packages/luci-app-adguardhome
+git clone https://github.com/gdck/luci-app-adguardhome package/lean/luci-app-adguardhome
 #git clone https://github.com/rufengsuixing/luci-app-adguardhome package/lean/luci-app-adguardhome
 # 获取luci-app-smartdns
 git clone https://github.com/gdck/openwrt-packages/tree/packages/luci-app-smartdns package/lean/luci-app-smartdns
