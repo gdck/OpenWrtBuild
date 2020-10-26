@@ -23,6 +23,8 @@ sed -i '3i /etc/init.d/samba stop' package/base-files/files/etc/rc.local #停止
 sed -i '4i /etc/init.d/samba disable' package/base-files/files/etc/rc.local #禁止samba服务开机自动
 #=================================================
 # 获取luci-app-adguardhome
+pushd package/lean
+rm -rf luci-app-adguardhome
 git clone https://github.com/gdck/luci-app-adguardhome package/lean/luci-app-adguardhome
 #git clone https://github.com/rufengsuixing/luci-app-adguardhome package/lean/luci-app-adguardhome
 # 获取luci-app-smartdns
