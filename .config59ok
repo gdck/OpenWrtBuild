@@ -382,6 +382,7 @@ CONFIG_PACKAGE_luci-app-fileassistant=y
 CONFIG_PACKAGE_luci-app-filebrowser=m
 CONFIG_PACKAGE_luci-app-frpc=y
 CONFIG_PACKAGE_luci-app-frps=m
+CONFIG_PACKAGE_luci-app-qos-gargoyle=y
 CONFIG_PACKAGE_luci-app-fwknopd=m
 CONFIG_PACKAGE_luci-app-gost=m
 CONFIG_PACKAGE_luci-app-guest-wifi=m
