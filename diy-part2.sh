@@ -62,7 +62,7 @@ git clone https://github.com/kongfl888/luci-app-wrtbwmon package/lean/luci-app-w
 # 获取luci-app-koolproxy
 git clone https://github.com/gdck/luci-app-koolproxy package/lean/luci-app-koolproxy
 # 获取luci-app-qos-gargoyle
-git clone https://github.com/gdck/luci-app-qos-gargoyle
+git clone https://github.com/gdck/luci-app-qos-gargoyle package/lean/luci-app-qos-gargoyle
 # 获取luci-app-openclash 编译po2lmo
 #git clone -b master https://github.com/vernesong/OpenClash package/diy-packages/openclash
 #pushd package/diy-packages/openclash/luci-app-openclash/tools/po2lmo
