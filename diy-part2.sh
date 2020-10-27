@@ -57,8 +57,8 @@ git clone https://github.com/gdck/luci-app-control-weburl package/lean/luci-app-
 # 获取luci-app-wrtbwmon-zh
 rm -rf luci-app-wrtbwmon
 #git clone https://github.com/gdck/luci-app-wrtbwmon  package/lean/luci-app-wrtbwmon
-git clone https://github.com/kongfl888/luci-app-wrtbwmon package/lean/luci-app-wrtbwmon
-#git clone https://github.com/brvphoenix/luci-app-wrtbwmon-zh package/lean/luci-app-wrtbwmon
+#git clone https://github.com/kongfl888/luci-app-wrtbwmon package/lean/luci-app-wrtbwmon
+git clone https://github.com/brvphoenix/luci-app-wrtbwmon-zh package/lean/luci-app-wrtbwmon
 # 获取luci-app-koolproxy
 git clone https://github.com/gdck/luci-app-koolproxy package/lean/luci-app-koolproxy
 # 获取luci-app-qos-gargoyle
