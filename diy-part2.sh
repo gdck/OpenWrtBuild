@@ -15,13 +15,17 @@
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-#git clone https://github.com/kenzok8/openwrt-packages package/op-packages
 #=================================================
 #本地启动脚本
 #启动脚本插入到 'exit 0' 之前即可随系统启动运行。
 sed -i '3i /etc/init.d/samba stop' package/base-files/files/etc/rc.local #停止samba服务
 sed -i '4i /etc/init.d/samba disable' package/base-files/files/etc/rc.local #禁止samba服务开机自动
 #=================================================
+#git clone https://github.com/kenzok8/openwrt-packages package/op-packages
+# 获取Lienol-package
+#git clone https://github.com/Lienol/openwrt-package package/diy-packages/lienol
+# 获取gdck-package
+#git clone https://github.com/gdck/openwrt-packages 
 # 获取luci-app-adguardhome
 pushd package/lean
 rm -rf luci-app-adguardhome
@@ -39,10 +43,6 @@ git clone https://github.com/gdck/luci-app-cupsd package/lean/luci-app-cupsd
 # 获取passwall
 #git clone -b 3.6-40 https://github.com/liuran001/luci-app-passwall package/diy-packages/passwall
 git clone -b https://github.com/gdck/luci-app-passwall-plus package/lean/passwall
-# 获取Lienol-package
-#git clone https://github.com/Lienol/openwrt-package package/diy-packages/lienol
-# 获取gdck-package
-git clone https://github.com/gdck/openwrt-packages package/gdck
 # 获取可道云 luci-app-kodexplorer
 #git clone https://github.com/silime/luci-app-kodexplorer package/lean/luci-app-kodexplorer
 # 获取luci-app-diskman和依赖
