@@ -56,9 +56,9 @@ git clone https://github.com/tty228/luci-app-serverchan package/lean/luci-app-se
 git clone https://github.com/gdck/luci-app-control-weburl package/lean/luci-app-control-weburl
 # 获取luci-app-wrtbwmon-zh
 rm -rf luci-app-wrtbwmon
-#git clone https://github.com/gdck/luci-app-wrtbwmon  package/lean/luci-app-wrtbwmon
+git clone https://github.com/gdck/openwrt-packages/tree/packages-19.07/luci-app-wrtbwmon  package/lean/luci-app-wrtbwmon
 #git clone https://github.com/kongfl888/luci-app-wrtbwmon package/lean/luci-app-wrtbwmon
-git clone https://github.com/brvphoenix/luci-app-wrtbwmon package/lean/luci-app-wrtbwmon
+#git clone https://github.com/brvphoenix/luci-app-wrtbwmon package/lean/luci-app-wrtbwmon
 # 获取luci-app-koolproxy
 git clone https://github.com/gdck/luci-app-koolproxy package/lean/luci-app-koolproxy
 # 获取luci-app-qos-gargoyle
