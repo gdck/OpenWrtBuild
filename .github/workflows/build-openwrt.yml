@@ -14,7 +14,7 @@ on:
   repository_dispatch:
   workflow_dispatch:
     #inputs:
-    #  SSH_ACTIONS:
+    #  ssh:
     #    description: 'SSH connection to Actions'
     #    required: false
     #    default: 'false'
@@ -28,8 +28,8 @@ env:
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
-  #SSH_ACTIONS: false
-  SSSH_ACTIONS: true
+  SSH_ACTIONS: false
+  #SSSH_ACTIONS: true
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: true
