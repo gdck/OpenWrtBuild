@@ -25,7 +25,7 @@ sed -i '4i /etc/init.d/samba disable' package/base-files/files/etc/rc.local #禁
 # 获取Lienol-package
 #git clone https://github.com/Lienol/openwrt-package package/diy-packages/lienol
 # 获取gdck-package
-git clone https://github.com/gdck/openwrt-packages/tree/packages package/lean
+#git clone https://github.com/gdck/openwrt-packages package/gdck
 # 获取luci-app-smartdns
 #git clone https://github.com/gdck/openwrt-packages/tree/packages/luci-app-smartdns package/lean/luci-app-smartdns
 #git clone https://github.com/gdck/openwrt-packages/tree/packages/smartdns package/lean/smartdns
