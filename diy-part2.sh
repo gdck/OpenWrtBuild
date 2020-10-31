@@ -102,6 +102,16 @@ rm -rf package/lean/luci-app-smartdns
 svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-smartdns package/lean/luci-app-smartdns
 rm -rf package/lean/smartdns
 svn co  https://github.com/gdck/openwrt-packages/trunk/smartdns package/lean/smartdns
+#=============================================================================================================================
+# 获取luci-app-chinadns-ng
+svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-chinadns-ng package/lean/luci-app-chinadns-ng 
+#=============================================================================================================================
+# 获取luci-app-adguardhome
+#pushd package/lean
+rm -rf package/lean/luci-app-adguardhome
+git clone https://github.com/gdck/luci-app-adguardhome package/lean/luci-app-adguardhome
+#git clone https://github.com/rufengsuixing/luci-app-adguardhome package/lean/luci-app-adguardhome
+#===============================================================================================================================
 #==========================================================================================================
 #==========================================================================================================
 #==========================================================================================================
@@ -129,13 +139,7 @@ git clone https://github.com/gdck/luci-app-qos-gargoyle package/lean/luci-app-qo
 #pushd package/diy-packages/openclash/luci-app-openclash/tools/po2lmo
 make && sudo make install
 popd
-#==================================================================================================================================
-# 获取luci-app-adguardhome
-#pushd package/lean
-rm -rf package/lean/luci-app-adguardhome
-git clone https://github.com/gdck/luci-app-adguardhome package/lean/luci-app-adguardhome
-#git clone https://github.com/rufengsuixing/luci-app-adguardhome package/lean/luci-app-adguardhome
-#===============================================================================================================================
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # 清除默认主题
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 #===============================================================================================================================
