@@ -50,7 +50,6 @@ git clone https://github.com/gdck/luci-app-cupsd package/lean/luci-app-cupsd
 svn co  https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall package/lean/luci-app-passwall
 #git clone -b https://github.com/gdck/luci-app-passwall-plus package/lean/passwall
 svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-passwall package/lean/luci-app-passwall
-svn co  https://github.com/gdck/openwrt-packages/trunk/chinadns-ng package/lean/chinadns-ng
 svn co  https://github.com/gdck/openwrt-packages/trunk/dns2socks package/lean/dns2socks
 svn co  https://github.com/gdck/openwrt-packages/trunk/ipt2socks package/lean/ipt2socks
 svn co  https://github.com/gdck/openwrt-packages/trunk/iptvhelper package/lean/iptvhelper
@@ -104,7 +103,8 @@ rm -rf package/lean/smartdns
 svn co  https://github.com/gdck/openwrt-packages/trunk/smartdns package/lean/smartdns
 #=============================================================================================================================
 # 获取luci-app-chinadns-ng
-svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-chinadns-ng package/lean/luci-app-chinadns-ng 
+svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-chinadns-ng package/lean/luci-app-chinadns-ng
+svn co  https://github.com/gdck/openwrt-packages/trunk/chinadns-ng package/lean/chinadns-ng 
 #=============================================================================================================================
 # 获取luci-app-adguardhome
 #pushd package/lean
