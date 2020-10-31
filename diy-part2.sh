@@ -112,21 +112,20 @@ rm -rf package/lean/luci-app-adguardhome
 git clone https://github.com/gdck/luci-app-adguardhome package/lean/luci-app-adguardhome
 #git clone https://github.com/rufengsuixing/luci-app-adguardhome package/lean/luci-app-adguardhome
 #===============================================================================================================================
+# 获取luci-app-ser2net串口网络透传
+svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-ser2net package/lean/luci-app-ser2net
 #==========================================================================================================
+#  获取luci-app-socat一个多功能的网络工具
+svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-socat package/lean/luci-app-socat
 #==========================================================================================================
 #==========================================================================================================
 #==========================================================================================================
 #==========================================================================================================
 # 获取luci-app-wrtbwmon
-#git clone -b packages-19.07  https://github.com/gdck/openwrt-packages/luci-app-wrtbwmon package/lean/luci-app-wrtbwmon
-#svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-wrtbwmon  package/lean/luci-app-wrtbwmon
-#svn co  https://github.com/gdck/openwrt-packages/trunk/wrtbwmon package/lean/wrtbwmon
+#svn co https://github.com/gdck/openwrt-packages/branches/packages-19.07/luci-app-wrtbwmon package/lean/luci-app-wrtbwmon
+#svn co https://github.com/gdck/openwrt-packages/branches/packages-19.07/wrtbwmon package/lean/wrtbwmon
 #git clone https://github.com/kongfl888/luci-app-wrtbwmon package/lean/luci-app-wrtbwmon
 git clone https://github.com/brvphoenix/luci-app-wrtbwmon package/lean/luci-app-wrtbwmon
-#==========================================================================================================
-#==========================================================================================================
-#==========================================================================================================
-#==========================================================================================================
 #======================================================================================================================
 # 获取luci-app-koolproxy
 git clone https://github.com/gdck/luci-app-koolproxy package/lean/luci-app-koolproxy
