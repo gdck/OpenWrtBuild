@@ -47,6 +47,7 @@ git clone https://github.com/gdck/luci-app-cupsd package/lean/luci-app-cupsd
 #==========================================================================================================
 # 获取passwall
 #git clone -b 3.6-40 https://github.com/liuran001/luci-app-passwall package/diy-packages/passwall
+svn co  https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall package/lean/luci-app-passwall
 #git clone -b https://github.com/gdck/luci-app-passwall-plus package/lean/passwall
 svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-passwall package/lean/luci-app-passwall
 svn co  https://github.com/gdck/openwrt-packages/trunk/chinadns-ng package/lean/chinadns-ng
