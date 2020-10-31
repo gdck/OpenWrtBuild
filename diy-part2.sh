@@ -12,8 +12,11 @@
 
 # 这里的脚本在获取feeds后执行
 #=====================================================================================================
-# Modify default IP
+# Modify default IP 更改默认IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+#更改机器名
+#sed -i 's/OpenWrt/LEDE/g' package/base-files/files/bin/config_generate
+#添加软件源
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 #=====================================================================================================
 #更改版本号为编译时间
