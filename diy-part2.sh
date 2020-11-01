@@ -71,16 +71,16 @@ svn co  https://github.com/gdck/openwrt-packages/trunk/brook package/lean/brook
 git clone  https://github.com/gdck/luci-app-tn-netports package/lean/luci-app-luci-app-tn-netports
 #==========================================================================================================
 # 获取luci-app-qosv4
-git clone https://github.com/gdck/luci-app-qosv4 package/lean/luci-app-qosv4
+#git clone https://github.com/gdck/luci-app-qosv4 package/lean/luci-app-qosv4
 #==========================================================================================================
 # 获取luci-app-speederv2#UDPspeeder辅助插件
 git clone https://github.com/halldong/luci-app-speederv2 package/lean/luci-app-speederv2
 #==========================================================================================================
 # 获取uci-app-radius Radius服务器
-git clone https://github.com/MuJJus/luci-app-radius package/lean/luci-app-radius
+#git clone https://github.com/MuJJus/luci-app-radius package/lean/luci-app-radius
 #==========================================================================================================
 # 获取luci-app-wifidog web认证界面
-git clone https://github.com/gdck/luci-app-wifidog package/lean/luci-app-wifidog
+#git clone https://github.com/gdck/luci-app-wifidog package/lean/luci-app-wifidog
 #==========================================================================================================
 # 获取通过arp实现的在线人员查看的luci界面，统计误差为arp老化时间
 git clone https://github.com/gdck/luci-app-onliner package/lean/luci-app-onliner
