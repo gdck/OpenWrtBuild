@@ -119,7 +119,7 @@ git clone https://github.com/gdck/luci-app-adguardhome package/lean/luci-app-adg
 svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-ser2net package/lean/luci-app-ser2net
 #==========================================================================================================
 #  获取luci-app-socat一个多功能的网络工具
-svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-socat package/lean/luci-app-socat
+#svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-socat package/lean/luci-app-socat
 #==========================================================================================================
 #==========================================================================================================
 #==========================================================================================================
