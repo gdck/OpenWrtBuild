@@ -20,7 +20,8 @@
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 #=====================================================================================================
 #更改版本号为编译时间
-sed -i 's/R20.10.20/R$(date +%Y.%m.%d.%H:%M)/g' package/lean/default-settings/files/zzz-default-settings
+#sed -i 's/R20.10.20/R$(date +%Y.%m.%d.%H:%M)/g' package/lean/default-settings/files/zzz-default-settings
+sed -i "s/R20.10.20/R$(date +%Y.%m.%d.%H:%M)/g" package/lean/default-settings/files/zzz-default-settings
 #=====================================================================================================
 #本地启动脚本
 #启动脚本插入到 'exit 0' 之前即可随系统启动运行。
