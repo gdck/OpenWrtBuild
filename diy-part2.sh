@@ -24,6 +24,8 @@
 sed -i "s/R2020.10.27.09:55/R$(date +%Y.%m.%d.%H:%M)/g" package/lean/default-settings/files/zzz-default-settings
 sed -i "s/R20.10.20/R$(date +%Y.%m.%d.%H:%M)/g" package/lean/default-settings/files/zzz-default-settings
 #=====================================================================================================
+sed -i '46i 151.101.76.133 raw.githubusercontent.com' package/base-files/files/etc/hosts
+#=====================================================================================================
 #本地启动脚本
 #启动脚本插入到 'exit 0' 之前即可随系统启动运行。
 sed -i '3i /etc/init.d/samba stop' package/base-files/files/etc/rc.local #停止samba服务
@@ -110,13 +112,13 @@ svn co  https://github.com/gdck/openwrt-packages/trunk/smartdns package/lean/sma
 # 获取luci-app-chinadns-ng
 svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-chinadns-ng package/lean/luci-app-chinadns-ng
 svn co  https://github.com/gdck/openwrt-packages/trunk/chinadns-ng package/lean/chinadns-ng 
-#=============================================================================================================================
+#===============================================================================================================
 # 获取luci-app-adguardhome
 #pushd package/lean
 rm -rf package/lean/luci-app-adguardhome
 git clone https://github.com/gdck/luci-app-adguardhome package/lean/luci-app-adguardhome
 #git clone https://github.com/rufengsuixing/luci-app-adguardhome package/lean/luci-app-adguardhome
-#===============================================================================================================================
+#============================================================================================================
 # 获取luci-app-ser2net串口网络透传
 svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-ser2net package/lean/luci-app-ser2net
 #==========================================================================================================
@@ -143,7 +145,7 @@ git clone https://github.com/gdck/luci-app-qos-gargoyle package/lean/luci-app-qo
 #pushd package/diy-packages/openclash/luci-app-openclash/tools/po2lmo
 make && sudo make install
 popd
-#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # 清除默认主题
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 #===============================================================================================================================
