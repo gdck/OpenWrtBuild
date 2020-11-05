@@ -21,6 +21,7 @@
 #=====================================================================================================
 #更改版本号为编译时间
 #sed -i 's/R20.10.20/R$(date +%Y.%m.%d.%H:%M)/g' package/lean/default-settings/files/zzz-default-settings
+sed -i "s/R2020.10.27.09:55/R$(date +%Y.%m.%d.%H:%M)/g" package/lean/default-settings/files/zzz-default-settings
 sed -i "s/R20.10.20/R$(date +%Y.%m.%d.%H:%M)/g" package/lean/default-settings/files/zzz-default-settings
 #=====================================================================================================
 #本地启动脚本
