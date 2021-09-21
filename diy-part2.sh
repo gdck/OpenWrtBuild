@@ -93,7 +93,7 @@ git clone https://github.com/gdck/luci-app-onliner package/lean/luci-app-onliner
 git clone https://github.com/gdck/luci-app-tn-logview package/lean/luci-app-tn-logview
 #==========================================================================================================
 # 获取网易云音乐解锁mini
-git clone https://github.com/gdck/luci-app-unblockneteasemusic-mini package/lean/luci-app-unblockneteasemusic-mini
+#git clone https://github.com/gdck/luci-app-unblockneteasemusic-mini package/lean/luci-app-unblockneteasemusic-mini
 #==========================================================================================================
 # 获取可道云 luci-app-kodexplorer
 #git clone https://github.com/silime/luci-app-kodexplorer package/lean/luci-app-kodexplorer
@@ -110,8 +110,8 @@ rm -rf package/lean/smartdns
 svn co  https://github.com/gdck/openwrt-packages/trunk/smartdns package/lean/smartdns
 #=============================================================================================================================
 # 获取luci-app-chinadns-ng
-svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-chinadns-ng package/lean/luci-app-chinadns-ng
-svn co  https://github.com/gdck/openwrt-packages/trunk/chinadns-ng package/lean/chinadns-ng 
+#svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-chinadns-ng package/lean/luci-app-chinadns-ng
+#svn co  https://github.com/gdck/openwrt-packages/trunk/chinadns-ng package/lean/chinadns-ng 
 #===============================================================================================================
 # 获取luci-app-adguardhome
 #pushd package/lean
@@ -123,7 +123,7 @@ git clone https://github.com/gdck/luci-app-adguardhome package/lean/luci-app-adg
 svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-ser2net package/lean/luci-app-ser2net
 #==========================================================================================================
 #  获取luci-app-socat一个多功能的网络工具
-#svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-socat package/lean/luci-app-socat
+# svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-socat package/lean/luci-app-socat
 #==========================================================================================================
 #==========================================================================================================
 #==========================================================================================================
