@@ -44,7 +44,8 @@ wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Makefile -
 wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Parted.Makefile -O package/lean/parted/Makefile
 #================================================================================================================
 # 获取应用过滤luci-app-oaf
-git clone https://github.com/destan19/OpenAppFilter package/lean/luci-app-oaf
+#git clone https://github.com/destan19/OpenAppFilter package/lean/luci-app-oaf
+git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 # 获取luci-app-cupsd
 git clone https://github.com/gdck/luci-app-cupsd package/lean/luci-app-cupsd
 #==================================================================================================================
