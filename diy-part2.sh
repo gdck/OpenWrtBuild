@@ -124,7 +124,7 @@ git clone https://github.com/gdck/luci-app-adguardhome package/lean/luci-app-adg
 svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-ser2net package/lean/luci-app-ser2net
 #==========================================================================================================
 #  获取luci-app-socat一个多功能的网络工具
-# svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-socat package/lean/luci-app-socat
+svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-socat package/lean/luci-app-socat
 #==========================================================================================================
 #==========================================================================================================
 #==========================================================================================================
@@ -148,10 +148,10 @@ src-git mtk https://github.com/Nossiac/mtk-openwrt-feeds;lede-17.01
 git clone https://github.com/brvphoenix/luci-app-wrtbwmon package/lean/luci-app-wrtbwmon
 #======================================================================================================================
 # 获取luci-app-koolproxy
-git clone https://github.com/gdck/luci-app-koolproxy package/lean/luci-app-koolproxy
+#git clone https://github.com/gdck/luci-app-koolproxy package/lean/luci-app-koolproxy
 #======================================================================================================================
 # 获取luci-app-qos-gargoyle
-git clone https://github.com/gdck/luci-app-qos-gargoyle package/lean/luci-app-qos-gargoyle
+#git clone https://github.com/gdck/luci-app-qos-gargoyle package/lean/luci-app-qos-gargoyle
 #======================================================================================================================
 # 获取luci-app-openclash 编译po2lmo
 #git clone -b master https://github.com/vernesong/OpenClash package/diy-packages/openclash
