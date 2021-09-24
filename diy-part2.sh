@@ -73,7 +73,7 @@ svn co  https://github.com/gdck/openwrt-packages/trunk/naiveproxy package/lean/n
 svn co  https://github.com/gdck/openwrt-packages/trunk/brook package/lean/brook
 #==========================================================================================================
 # 获取网络端口状态
-git clone  https://github.com/gdck/luci-app-tn-netports package/lean/luci-app-luci-app-tn-netports
+git clone  https://github.com/gdck/luci-app-tn-netports package/lean/luci-app-tn-netports
 #==========================================================================================================
 # 获取luci-app-qosv4
 #git clone https://github.com/gdck/luci-app-qosv4 package/lean/luci-app-qosv4
