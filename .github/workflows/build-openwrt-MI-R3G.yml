@@ -70,11 +70,11 @@ jobs:
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         
-    - name: Cache
-      uses: gdck/cachewrtbuild@main
-      with:
-        ccache: 'true'
-        prefix: ${{ github.workspace }}/openwrt
+    #- name: Cache
+    #  uses: gdck/cachewrtbuild@main
+    #  with:
+    #    ccache: 'true'
+    #    prefix: ${{ github.workspace }}/openwrt
         
     #- name: cache
     #  uses: gdck/cachewrtbuild@main
