@@ -96,6 +96,7 @@ git clone https://github.com/gdck/luci-app-tn-logview package/lean/luci-app-tn-l
 # 获取网易云音乐解锁mini
 #git clone https://github.com/gdck/luci-app-unblockneteasemusic-mini package/lean/luci-app-unblockneteasemusic-mini
 rm -rf package/lean/luci-app-unblockneteasemusic
+rm -rf package/lean/luci-app-unblockmusic
 #==========================================================================================================
 # 获取可道云 luci-app-kodexplorer
 #git clone https://github.com/silime/luci-app-kodexplorer package/lean/luci-app-kodexplorer
