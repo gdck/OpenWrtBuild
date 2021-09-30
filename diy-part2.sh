@@ -55,22 +55,22 @@ git clone https://github.com/gdck/luci-app-cupsd package/lean/luci-app-cupsd
 #==========================================================================================================
 # 获取passwall
 #git clone -b 3.6-40 https://github.com/liuran001/luci-app-passwall package/diy-packages/passwall
-svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall package/lean/luci-app-passwall
+#svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall package/lean/luci-app-passwall
 #git clone -b https://github.com/gdck/luci-app-passwall-plus package/lean/passwall
-svn co https://github.com/gdck/openwrt-packages/trunk/luci-app-passwall package/lean/luci-app-passwall
-svn co https://github.com/gdck/openwrt-packages/trunk/dns2socks package/lean/dns2socks
-svn co https://github.com/gdck/openwrt-packages/trunk/ipt2socks package/lean/ipt2socks
-svn co https://github.com/gdck/openwrt-packages/trunk/iptvhelper package/lean/iptvhelper
-svn co https://github.com/gdck/openwrt-packages/trunk/microsocks package/lean/microsocks
-svn co https://github.com/gdck/openwrt-packages/trunk/ssocks package/lean/ssocks
-svn co https://github.com/gdck/openwrt-packages/trunk/tcping package/lean/tcping
-svn co https://github.com/gdck/openwrt-packages/trunk/trojan-go package/lean/trojan-go
-svn co https://github.com/gdck/openwrt-packages/trunk/trojan-plus package/lean/trojan-plus
-svn co https://github.com/gdck/openwrt-packages/trunk/trojan package/lean/trojan
-svn co https://github.com/gdck/openwrt-packages/trunk/v2ray-plugin package/lean/v2ray-plugin
-svn co https://github.com/gdck/openwrt-packages/trunk/v2ray package/lean/v2ray
-svn co https://github.com/gdck/openwrt-packages/trunk/naiveproxy package/lean/naiveproxy
-svn co https://github.com/gdck/openwrt-packages/trunk/brook package/lean/brook
+#svn co https://github.com/gdck/openwrt-packages/trunk/luci-app-passwall package/lean/luci-app-passwall
+#svn co https://github.com/gdck/openwrt-packages/trunk/dns2socks package/lean/dns2socks
+#svn co https://github.com/gdck/openwrt-packages/trunk/ipt2socks package/lean/ipt2socks
+#svn co https://github.com/gdck/openwrt-packages/trunk/iptvhelper package/lean/iptvhelper
+#svn co https://github.com/gdck/openwrt-packages/trunk/microsocks package/lean/microsocks
+#svn co https://github.com/gdck/openwrt-packages/trunk/ssocks package/lean/ssocks
+#svn co https://github.com/gdck/openwrt-packages/trunk/tcping package/lean/tcping
+#svn co https://github.com/gdck/openwrt-packages/trunk/trojan-go package/lean/trojan-go
+#svn co https://github.com/gdck/openwrt-packages/trunk/trojan-plus package/lean/trojan-plus
+#svn co https://github.com/gdck/openwrt-packages/trunk/trojan package/lean/trojan
+#svn co https://github.com/gdck/openwrt-packages/trunk/v2ray-plugin package/lean/v2ray-plugin
+#svn co https://github.com/gdck/openwrt-packages/trunk/v2ray package/lean/v2ray
+#svn co https://github.com/gdck/openwrt-packages/trunk/naiveproxy package/lean/naiveproxy
+#svn co https://github.com/gdck/openwrt-packages/trunk/brook package/lean/brook
 #==========================================================================================================
 # 获取网络端口状态
 git clone https://github.com/gdck/luci-app-tn-netports.git package/lean/luci-app-tn-netports
