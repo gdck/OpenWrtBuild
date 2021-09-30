@@ -133,10 +133,10 @@ svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-socat package/le
 #==========================================================================================================
 #==========================================================================================================
 # MTK闭源驱动
-src-git mtk https://github.com/Nossiac/mtk-openwrt-feeds;lede-17.01
+src-git mtk https://github.com/Nossiac/mtk-openwrt-feeds #;lede-17.01
 #然后执行：
-#scripts/feeds update -f mtk
-#scripts/feeds install -a -p mtk
+scripts/feeds update -f mtk
+scripts/feeds install -a -p mtk
 #不要先以下模块
 #rt2x00
 #mt76
@@ -149,7 +149,7 @@ src-git mtk https://github.com/Nossiac/mtk-openwrt-feeds;lede-17.01
 #svn co https://github.com/gdck/openwrt-packages/branches/packages-19.07/luci-app-wrtbwmon package/lean/luci-app-wrtbwmon
 #svn co https://github.com/gdck/openwrt-packages/branches/packages-19.07/wrtbwmon package/lean/wrtbwmon
 #git clone https://github.com/kongfl888/luci-app-wrtbwmon package/lean/luci-app-wrtbwmon
-git clone https://github.com/brvphoenix/luci-app-wrtbwmon package/lean/luci-app-wrtbwmon
+git clone https://github.com/brvphoenix/luci-app-wrtbwmon.git package/lean/luci-app-wrtbwmon
 #======================================================================================================================
 # 获取luci-app-koolproxy
 #git clone https://github.com/gdck/luci-app-koolproxy package/lean/luci-app-koolproxy
