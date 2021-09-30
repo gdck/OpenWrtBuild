@@ -158,8 +158,8 @@ git clone https://github.com/brvphoenix/luci-app-wrtbwmon.git package/lean/luci-
 # 获取luci-app-openclash 编译po2lmo
 #git clone -b master https://github.com/vernesong/OpenClash package/diy-packages/openclash
 #pushd package/diy-packages/openclash/luci-app-openclash/tools/po2lmo
-make && sudo make install
-popd
+#make && sudo make install
+#popd
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # 清除默认主题
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
