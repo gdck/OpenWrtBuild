@@ -18,6 +18,19 @@
 #sed -i 's/OpenWrt/LEDE/g' package/base-files/files/bin/config_generate
 #添加软件源
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+# MTK闭源驱动
+sed -i '$a src-git mtk https://github.com/Nossiac/mtk-openwrt-feeds;lede-17.01' feeds.conf.default
+#mtk https://github.com/Nossiac/mtk-openwrt-feeds #;lede-17.01
+#然后执行：
+scripts/feeds update -f mtk
+scripts/feeds install -a -p mtk
+#不要先以下模块
+#rt2x00
+#mt76
+#cfg80211
+#mac80211
+#wpad
+#supplicant
 #=====================================================================================================
 #更改版本号为编译时间
 #sed -i 's/R20.10.20/R$(date +%Y.%m.%d.%H:%M)/g' package/lean/default-settings/files/zzz-default-settings
@@ -129,21 +142,6 @@ svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-ser2net package/
 #==========================================================================================================
 #  获取luci-app-socat一个多功能的网络工具
 svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-socat package/lean/luci-app-socat
-#==========================================================================================================
-#==========================================================================================================
-#==========================================================================================================
-# MTK闭源驱动
-src-git mtk https://github.com/Nossiac/mtk-openwrt-feeds #;lede-17.01
-#然后执行：
-scripts/feeds update -f mtk
-scripts/feeds install -a -p mtk
-#不要先以下模块
-#rt2x00
-#mt76
-#cfg80211
-#mac80211
-#wpad
-#supplicant
 #==========================================================================================================
 # 获取luci-app-wrtbwmon
 #svn co https://github.com/gdck/openwrt-packages/branches/packages-19.07/luci-app-wrtbwmon package/lean/luci-app-wrtbwmon
