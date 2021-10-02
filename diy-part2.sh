@@ -161,6 +161,8 @@ git clone https://github.com/brvphoenix/luci-app-wrtbwmon.git package/lean/luci-
 #make && sudo make install
 #popd
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+git clone https://github.com/gdck/openwrt-packages.git package/gdck
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # 清除默认主题
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 #===============================================================================================================================
