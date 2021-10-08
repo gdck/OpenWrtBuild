@@ -96,7 +96,7 @@ sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/theme
 pushd package/lean
 rm -rf luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon luci-theme-argon
-scripts/feeds update -a
-scripts/feeds install -a
+scripts/feeds update
+scripts/feeds install
 popd
 #===============================================================================================================================
