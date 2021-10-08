@@ -177,3 +177,5 @@ popd
 #rm -rf baidupcs-web
 #git clone https://github.com/liuran001/baidupcs-web-lede baidupcs-web
 #popd
+scripts/feeds update
+scripts/feeds install
