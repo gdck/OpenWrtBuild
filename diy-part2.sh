@@ -18,7 +18,7 @@
 #sed -i 's/OpenWrt/LEDE/g' package/base-files/files/bin/config_generate
 #添加软件源Lienol gdck
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-#sed -i '$a src-git gdck https://github.com/gdck/openwrt-packages' feeds.conf.default
+sed -i '$a src-git gdck https://github.com/gdck/openwrt-packages' feeds.conf.default
 # MTK闭源驱动
 sed -i '$a src-git mtk https://github.com/Nossiac/mtk-openwrt-feeds;lede-17.01' feeds.conf.default
 #mtk https://github.com/Nossiac/mtk-openwrt-feeds #;lede-17.01
