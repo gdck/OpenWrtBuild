@@ -52,19 +52,20 @@ sed -i '4i /etc/init.d/samba disable' package/base-files/files/etc/rc.local #禁
 git clone https://github.com/gdck/openwrt-packages.git package/lean
 #================================================================================================================
 # 获取luci-app-diskman和依赖
-mkdir -p package/diy-packages/luci-app-diskman && \
-mkdir -p package/diy-packages/parted && \
-wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Makefile -O package/lean/luci-app-diskman/Makefile
-wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Parted.Makefile -O package/lean/parted/Makefile
+# mkdir -p package/diy-packages/luci-app-diskman && \
+# mkdir -p package/diy-packages/parted && \
+# wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Makefile -O package/lean/luci-app-diskman/Makefile
+# wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Parted.Makefile -O package/lean/parted/Makefile
 #================================================================================================================
 # 获取应用过滤luci-app-oaf
 #git clone https://github.com/destan19/OpenAppFilter package/lean/luci-app-oaf
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 #==================================================================================================================
-# 获取luci-app-cupsd apple打印机
+# 获取apple打印机luci-app-cupsd 
 git clone https://github.com/gdck/luci-app-cupsd.git package/lean/luci-app-cupsd
+svn co  https://github.com/gdck/luci-app-cupsd/trunk package/lean/luci-app-cupsd
 #==================================================================================================================
-#获取luci-app-smartdnsDNS
+#获取智能DNSluci-app-smartdns
 rm -rf package/lean/luci-app-smartdns
 svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-smartdns package/lean/luci-app-smartdns
 rm -rf package/lean/smartdns
@@ -73,7 +74,7 @@ svn co https://github.com/gdck/openwrt-packages/trunk/smartdns package/lean/smar
 #获取luci-app-adguardhomeDNS
 #pushd package/lean
 #rm -rf package/lean/luci-app-adguardhome
-#git clone https://github.com/gdck/luci-app-adguardhome package/lean/luci-app-adguardhome
+git clone https://github.com/gdck/luci-app-adguardhome package/lean/luci-app-adguardhome
 #git clone https://github.com/rufengsuixing/luci-app-adguardhome package/lean/luci-app-adguardhome
 #======================================================================================================================
 # 获取luci-app-wrtbwmon
