@@ -19,6 +19,13 @@
 #添加软件源Lienol gdck
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 sed -i '$a src-git gdck https://github.com/gdck/openwrt-packages' feeds.conf.default
+#================================================================================================================
+#git clone https://github.com/kenzok8/openwrt-packages package/op-packages
+# 获取Lienol-package
+#git clone https://github.com/Lienol/openwrt-package package/diy-packages/lienol
+# 获取gdck-package
+# git clone https://github.com/gdck/openwrt-packages.git package/lean
+#================================================================================================================
 # MTK闭源驱动
 sed -i '$a src-git mtk https://github.com/Nossiac/mtk-openwrt-feeds;lede-17.01' feeds.conf.default
 #mtk https://github.com/Nossiac/mtk-openwrt-feeds #;lede-17.01
@@ -45,12 +52,6 @@ scripts/feeds install -a -p mtk
 sed -i '3i /etc/init.d/samba stop' package/base-files/files/etc/rc.local #停止samba服务
 sed -i '4i /etc/init.d/samba disable' package/base-files/files/etc/rc.local #禁止samba服务开机自动
 #=====================================================================================================
-#git clone https://github.com/kenzok8/openwrt-packages package/op-packages
-# 获取Lienol-package
-#git clone https://github.com/Lienol/openwrt-package package/diy-packages/lienol
-# 获取gdck-package
-git clone https://github.com/gdck/openwrt-packages.git package/lean
-#================================================================================================================
 # 获取luci-app-diskman和依赖
 # mkdir -p package/diy-packages/luci-app-diskman && \
 # mkdir -p package/diy-packages/parted && \
@@ -59,22 +60,22 @@ git clone https://github.com/gdck/openwrt-packages.git package/lean
 #================================================================================================================
 # 获取应用过滤luci-app-oaf
 #git clone https://github.com/destan19/OpenAppFilter package/lean/luci-app-oaf
-git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
+#git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 #==================================================================================================================
 # 获取apple打印机luci-app-cupsd 
-git clone https://github.com/gdck/luci-app-cupsd.git package/lean/luci-app-cupsd
-svn co  https://github.com/gdck/luci-app-cupsd/trunk package/lean/luci-app-cupsd
+#git clone https://github.com/gdck/luci-app-cupsd.git package/lean/luci-app-cupsd
+#svn co  https://github.com/gdck/luci-app-cupsd/trunk package/lean/luci-app-cupsd
 #==================================================================================================================
 #获取智能DNSluci-app-smartdns
-rm -rf package/lean/luci-app-smartdns
-svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-smartdns package/lean/luci-app-smartdns
-rm -rf package/lean/smartdns
-svn co https://github.com/gdck/openwrt-packages/trunk/smartdns package/lean/smartdns
+#rm -rf package/lean/luci-app-smartdns
+#svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-smartdns package/lean/luci-app-smartdns
+#rm -rf package/lean/smartdns
+#svn co https://github.com/gdck/openwrt-packages/trunk/smartdns package/lean/smartdns
 #============================================================================================================
 #获取luci-app-adguardhomeDNS
 #pushd package/lean
 #rm -rf package/lean/luci-app-adguardhome
-git clone https://github.com/gdck/luci-app-adguardhome package/lean/luci-app-adguardhome
+#git clone https://github.com/gdck/luci-app-adguardhome package/lean/luci-app-adguardhome
 #git clone https://github.com/rufengsuixing/luci-app-adguardhome package/lean/luci-app-adguardhome
 #======================================================================================================================
 # 获取luci-app-wrtbwmon
