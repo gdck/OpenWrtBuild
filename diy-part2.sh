@@ -45,7 +45,7 @@ scripts/feeds install -a -p mtk
 #sed -i "s/R2020.10.27.09:55/R$(date +%Y.%m.%d.%H:%M)/g" package/lean/default-settings/files/zzz-default-settings
 #sed -i "s/R20.10.20/R$(date +%Y.%m.%d.%H:%M)/g" package/lean/default-settings/files/zzz-default-settings
 #=====================================================================================================
-#sed -i '46i 199.232.28.133 raw.githubusercontent.com' package/base-files/files/etc/hosts
+sed -i '46i  185.199.111.133 raw.githubusercontent.com' package/base-files/files/etc/hosts
 #=====================================================================================================
 #本地启动脚本
 #启动脚本插入到 'exit 0' 之前即可随系统启动运行。
@@ -94,11 +94,12 @@ git clone https://github.com/gdck/luci-app-adguardhome package/lean/luci-app-adg
 # 清除默认主题
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 #===============================================================================================================================
+#scripts/feeds update -a
+#scripts/feeds install -a
+#===============================================================================================================================
 # 清除旧版argon主题并拉取最新版
 pushd package/lean
 rm -rf luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon luci-theme-argon
-scripts/feeds update
-scripts/feeds install
 popd
-#===============================================================================================================================
+
