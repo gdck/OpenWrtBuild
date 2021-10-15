@@ -129,7 +129,8 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: .config_${{ env.CODE }}_${{ env.TARGET_PROFILE }}_${{ env.Compile_Date }}
-        path: config.txt
+        #path: config.txt
+        path: openwrt/.config
 
     - name: Download package
       id: package
