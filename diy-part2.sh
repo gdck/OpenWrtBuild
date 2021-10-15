@@ -16,10 +16,14 @@
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 #更改机器名
 #sed -i 's/OpenWrt/LEDE/g' package/base-files/files/bin/config_generate
+#
+#=====================================================================================================
 #添加软件源Lienol gdck
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 sed -i '$a src-git gdck https://github.com/gdck/openwrt-packages' feeds.conf.default
+#
 #================================================================================================================
+#
 #git clone https://github.com/kenzok8/openwrt-packages package/op-packages
 # 获取Lienol-package
 #git clone https://github.com/Lienol/openwrt-package package/diy-packages/lienol
