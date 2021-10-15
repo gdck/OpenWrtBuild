@@ -38,6 +38,8 @@ env:
   UPLOAD_COWTRANSFER: true
   UPLOAD_WETRANSFER: true
   UPLOAD_RELEASE: true
+  BY_INFORMATION: true           # 是否显示编译信息（true=开启）（false=关闭）
+  USE_CACHEWRTBUILD: true        # 是否开启缓存加速（true=开启）（false=关闭）
   TZ: Asia/Shanghai
 
 jobs:
