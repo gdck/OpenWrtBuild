@@ -130,7 +130,7 @@ jobs:
       with:
         name: .config_${{ env.CODE }}_${{ env.TARGET_PROFILE }}_${{ env.Compile_Date }}
         #path: config.txt
-        path: openwrt/.config
+        path: .config
 
     - name: Download package
       id: package
