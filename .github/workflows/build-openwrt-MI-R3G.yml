@@ -123,15 +123,6 @@ jobs:
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         
-        
-    - name: 上传.config配置文件在 github actions
-      if: env.UPLOAD_CONFIG == 'true'
-      uses: actions/upload-artifact@v2
-      with:
-        name: .config_${{ env.CODE }}_${{ env.TARGET_PROFILE }}_${{ env.Compile_Date }}
-        #path: config.txt
-        path: .config
-
     - name: Download package
       id: package
       run: |
@@ -140,6 +131,14 @@ jobs:
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
+        
+    - name: 上传.config配置文件在 github actions
+      if: env.UPLOAD_CONFIG == 'true'
+      uses: actions/upload-artifact@v2
+      with:
+        name: .config_${{ env.CODE }}_${{ env.TARGET_PROFILE }}_${{ env.Compile_Date }}
+        #path: config.txt
+        path: .config
 
     - name: Compile the firmware
       id: compile
