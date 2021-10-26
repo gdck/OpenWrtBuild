@@ -51,3 +51,13 @@ git clone https://github.com/brvphoenix/luci-app-wrtbwmon.git package/lean/luci-
 
 #============================================================================================================
 
+# 获取luci-app-ser2net串口网络透传
+#svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-ser2net package/lean/luci-app-ser2net
+
+#==========================================================================================================
+
+#  获取luci-app-socat一个多功能的网络工具
+#svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-socat package/lean/luci-app-socat
+
+#==========================================================================================================
+
