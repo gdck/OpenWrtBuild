@@ -201,37 +201,6 @@ jobs:
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
         echo "::set-output name=release_tag::$(date +"%Y.%m.%d-%H%M")"
-        
-        echo "## Lean Openwrt Commit Top $COMMIT_LOG_NUM" >> release.txt
-        git -C openwrt log -n $COMMIT_LOG_NUM >> release.txt
-        
-        echo "## Lean Package Commit Top $COMMIT_LOG_NUM" >> release.txt
-        git -C openwrt/feeds/packages log -n $COMMIT_LOG_NUM >> release.txt
-        
-        echo "## Lean Luci Commit Top $COMMIT_LOG_NUM" >> release.txt
-        git -C openwrt/feeds/luci log -n $COMMIT_LOG_NUM >> release.txt
-        
-        echo "## Openwrt routing Commit Top $COMMIT_LOG_NUM" >> release.txt
-        git -C openwrt/feeds/routing log -n $COMMIT_LOG_NUM >> release.txt
-        
-        echo "## Openwrt telephony Commit Top $COMMIT_LOG_NUM" >> release.txt
-        git -C openwrt/feeds/telephony log -n $COMMIT_LOG_NUM >> release.txt
-        
-        echo "## SSRP Commit Top $COMMIT_LOG_NUM" >> release.txt
-        git -C openwrt/feeds/helloworld log -n $COMMIT_LOG_NUM >> release.txt
-        
-        echo "## Passwall Commit Top $COMMIT_LOG_NUM" >> release.txt
-        git -C openwrt/feeds/passwall log -n $COMMIT_LOG_NUM >> release.txt
-        
-        echo "## DockerMan Commit Top $COMMIT_LOG_NUM" >> release.txt
-        git -C openwrt/package/lean/luci-app-dockerman log -n $COMMIT_LOG_NUM >> release.txt
-        
-        echo "## ThemeArgon Commit Top $COMMIT_LOG_NUM" >> release.txt
-        git -C openwrt/package/lean/luci-theme-argon log -n $COMMIT_LOG_NUM >> release.txt
-        
-        echo "## ArgonConfig Commit Top $COMMIT_LOG_NUM" >> release.txt
-        git -C openwrt/package/lean/luci-app-argon-config log -n $COMMIT_LOG_NUM >> release.txt
-        
         touch release.txt
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
         [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
