@@ -33,7 +33,8 @@ git clone https://github.com/destan19/OpenAppFilter package/lean/luci-app-oaf
 #rm -rf package/lean/luci-app-smartdns
 svn co https://github.com/gdck/openwrt-packages/trunk/luci-app-smartdns package/lean/luci-app-smartdns
 #rm -rf package/lean/smartdns
-svn co https://github.com/gdck/openwrt-packages/trunk/smartdns package/lean/smartdns
+#svn co https://github.com/gdck/openwrt-packages/trunk/smartdns package/lean/smartdns
+svn co https://github.com/pymumu/luci-app-smartdns package/lean/smartdns
 #------------------------------------------------------------------------------------
 #获取luci-app-adguardhomeDNS
 #pushd package/lean
@@ -47,6 +48,7 @@ git clone https://github.com/gdck/luci-app-adguardhome package/lean/luci-app-adg
 #svn co https://github.com/gdck/openwrt-packages/branches/packages-19.07/luci-app-wrtbwmon package/lean/luci-app-wrtbwmon
 #svn co https://github.com/gdck/openwrt-packages/branches/packages-19.07/wrtbwmon package/lean/wrtbwmon
 #git clone https://github.com/kongfl888/luci-app-wrtbwmon package/lean/luci-app-wrtbwmon
+rm -rf package/lean/luci-app-wrtbwmon
 git clone https://github.com/brvphoenix/luci-app-wrtbwmon.git package/lean/luci-app-wrtbwmon
 
 #============================================================================================================
