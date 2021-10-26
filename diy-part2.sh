@@ -34,8 +34,9 @@ rm -rf package/lean/luci-app-smartdns
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-smartdns package/lean/luci-app-smartdns
 #svn co https://github.com/gdck/openwrt-packages/trunk/luci-app-smartdns package/lean/luci-app-smartdns
 #svn co https://github.com/pymumu/luci-app-smartdns package/lean/luci-app-smartdns
-#rm -rf package/lean/smartdns
+rm -rf package/lean/smartdns
 #svn co https://github.com/gdck/openwrt-packages/trunk/smartdns package/lean/smartdns
+git clone https://github.com/pymumu/smartdns package/lean/smartdns
 
 #------------------------------------------------------------------------------------
 #获取luci-app-adguardhomeDNS
