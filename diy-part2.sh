@@ -46,13 +46,12 @@ git clone https://github.com/gdck/luci-app-adguardhome package/lean/luci-app-adg
 #git clone https://github.com/rufengsuixing/luci-app-adguardhome package/lean/luci-app-adguardhome
 
 #============================================================================================================
-
 # 获取luci-app-wrtbwmon
 #svn co https://github.com/gdck/openwrt-packages/branches/packages-19.07/luci-app-wrtbwmon package/lean/luci-app-wrtbwmon
 #svn co https://github.com/gdck/openwrt-packages/branches/packages-19.07/wrtbwmon package/lean/wrtbwmon
 #git clone https://github.com/kongfl888/luci-app-wrtbwmon package/lean/luci-app-wrtbwmon
-rm -rf package/lean/luci-app-wrtbwmon
-svn co https://github.com/brvphoenix/luci-app-wrtbwmon package/lean/luci-app-wrtbwmon
+#rm -rf package/lean/luci-app-wrtbwmon
+#svn co https://github.com/brvphoenix/luci-app-wrtbwmon package/lean/luci-app-wrtbwmon
 
 #============================================================================================================
 
