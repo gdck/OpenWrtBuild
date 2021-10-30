@@ -56,12 +56,17 @@ git clone https://github.com/gdck/luci-app-adguardhome package/lean/luci-app-adg
 #============================================================================================================
 
 # 获取luci-app-ser2net串口网络透传
-#svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-ser2net package/lean/luci-app-ser2net
+svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-ser2net package/lean/luci-app-ser2net
 
 #==========================================================================================================
 
 #  获取luci-app-socat一个多功能的网络工具
-#svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-socat package/lean/luci-app-socat
+svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-socat package/lean/luci-app-socat
+
+#==========================================================================================================
+
+# 获取通过arp实现的在线人员查看的luci界面，统计误差为arp老化时间
+git clone https://github.com/gdck/luci-app-onliner package/lean/luci-app-onliner
 
 #==========================================================================================================
 
