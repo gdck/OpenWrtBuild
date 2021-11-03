@@ -61,7 +61,8 @@ svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-ser2net package/
 #==========================================================================================================
 
 #  获取luci-app-socat一个多功能的网络工具
-svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-socat package/lean/luci-app-socat
+git clone https://github.com/nickilchen/luci-app-socat package/lean/luci-app-socat
+#svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-socat package/lean/luci-app-socat
 
 #==========================================================================================================
 
@@ -73,5 +74,5 @@ git clone https://github.com/gdck/luci-app-onliner package/lean/luci-app-onliner
 #常用来管理多种轻量级Internet服务。Xinetd提供类似于inetd+tcp_wrapper的功能，但是更加强大和安全。
 
 #svn co https://github.com/openwrt/luci/trunk/applications/luci-app-xinetd package/lean/luci-app-xinetd
-svn co https://github.com/gdck/openwrt-packages/trunk/packages/luci-app-xinetd package/lean/luci-app-xinetd
+svn co https://github.com/gdck/openwrt-packages/trunk/luci-app-xinetd package/lean/luci-app-xinetd
 
