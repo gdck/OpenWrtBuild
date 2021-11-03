@@ -69,4 +69,9 @@ svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-socat package/le
 git clone https://github.com/gdck/luci-app-onliner package/lean/luci-app-onliner
 
 #==========================================================================================================
+#Xinetd：即extended internet daemon，是新一代的网络守护进程服务程序，又叫超级Internet服务器，
+#常用来管理多种轻量级Internet服务。Xinetd提供类似于inetd+tcp_wrapper的功能，但是更加强大和安全。
+
+#svn co https://github.com/openwrt/luci/trunk/applications/luci-app-xinetd package/lean/luci-app-xinetd
+svn co https://github.com/gdck/openwrt-packages/trunk/packages/luci-app-xinetd package/lean/luci-app-xinetd
 
