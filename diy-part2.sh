@@ -15,6 +15,8 @@
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
+sed -i 's/tplink-4mlzma/tplink-16mlzma/g' /target/linux/ath79/image/tiny-tp-link.mk
+
 #===================================================================================
 
 # 获取apple打印机luci-app-cupsd 
