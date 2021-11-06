@@ -13,11 +13,15 @@
 
 # Modify default IP 更改默认IP
 # Modify default IP
-#把config_generate文件中的192.168.1.1替换为192.168.50.5
-#sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+#把config_generate文件中的192.168.1.1替换为192.168.1.253
+#sed -i 's/192.168.1.1/192.168.1.253/g' package/base-files/files/bin/config_generate
 
-#把tiny-tp-link.mk中227行的4替换成16
+#修改703N的固件16M把tiny-tp-link.mk中227行的4替换成16
 sed -i '227s#4#16#' /target/linux/ath79/image/tiny-tp-link.mk
+
+#修改703N的固件16M
+sed -i 's/0x3d0000/0xfd0000/g' /target/linux/ath79/dts/ar9331_tplink_tl-wr703n_tl-mr10u.dtsi
+sed -i 's/0x3f0000/0xff0000/g' /target/linux/ath79/dts/ar9331_tplink_tl-wr703n_tl-mr10u.dtsi
 
 #===================================================================================
 
