@@ -17,7 +17,7 @@
 sed -i 's/192.168.1.1/192.168.1.253/g' package/base-files/files/bin/config_generate
 
 #修改703N的固件16M把tiny-tp-link.mk中227行的4替换成16
-sed -i '227s#4#16#' /target/linux/ath79/image/tiny-tp-link.mk
+sed -i '227s#4#16#' target/linux/ath79/image/tiny-tp-link.mk
 
 #修改703N的固件16M
 sed -i 's/0x3d0000/0xfd0000/g' target/linux/ath79/dts/ar9331_tplink_tl-wr703n_tl-mr10u.dtsi
