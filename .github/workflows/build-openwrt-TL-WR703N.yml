@@ -25,8 +25,8 @@ on:
 
 
 env:
-  REPO_URL: https://github.com/openwrt/openwrt
-  #REPO_URL: https://github.com/coolsnowwolf/lede
+  #REPO_URL: https://github.com/openwrt/openwrt
+  REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
@@ -72,11 +72,11 @@ jobs:
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         
-    #- name: Cache
-    #  uses: gdck/cachewrtbuild@main
-    # with:
-    #    ccache: 'true'
-    #    prefix: ${{ github.workspace }}/openwrt
+    - name: Cache
+      uses: gdck/cachewrtbuild@main
+      with:
+        ccache: 'true'
+        prefix: ${{ github.workspace }}/openwrt
         
     #- name: cache
     #  uses: gdck/cachewrtbuild@main
