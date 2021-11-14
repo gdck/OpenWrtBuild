@@ -31,11 +31,15 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' ./package/lean/default-settings/files/z
 
 #===================================================================================
 # 修改703N的固件16M把tiny-tp-link.mk中227行的4替换成16
-sed -i '227s#4#16#' target/linux/ath79/image/tiny-tp-link.mk
+sed -i '227s#4#16#' ./target/linux/ath79/image/tiny-tp-link.mk
 
 # 修改703N的固件16M大小
 sed -i 's/0x3d0000/0xfd0000/g' target/linux/ath79/dts/ar9331_tplink_tl-wr703n_tl-mr10u.dtsi
 sed -i 's/0x3f0000/0xff0000/g' target/linux/ath79/dts/ar9331_tplink_tl-wr703n_tl-mr10u.dtsi
+
+ 
+# 703N的USB 修改tiny-tp-link.mk中230行的kmod-usb-chipidea2替换成kmod-usb-core kmod-usb2
+sed -i 's/kmod-usb-chipidea2/kmod-usb-core kmod-usb2/g' ./target/linux/ath79/image/tiny-tp-link.mk
 
 #===================================================================================
 # 获取apple-cupsd打印机服务luci-app-cupsd 
