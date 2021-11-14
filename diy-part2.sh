@@ -39,7 +39,7 @@ sed -i 's/0x3f0000/0xff0000/g' target/linux/ath79/dts/ar9331_tplink_tl-wr703n_tl
 
  
 # 703N的USB 修改tiny-tp-link.mk中230行的kmod-usb-chipidea2替换成kmod-usb-core kmod-usb2
-sed -i 's/kmod-usb-chipidea2/kmod-usb-core kmod-usb2/g' ./target/linux/ath79/image/tiny-tp-link.mk
+# sed -i 's/kmod-usb-chipidea2/kmod-usb-core kmod-usb2/g' ./target/linux/ath79/image/tiny-tp-link.mk
 
 #===================================================================================
 # 获取apple-cupsd打印机服务luci-app-cupsd 
