@@ -13,7 +13,7 @@
 # Modify default IP 更改默认IP
 # 修改openwrt登陆地址,把下面的192.168.2.1修改成你想要的就可以了
 # 把config_generate文件中的192.168.1.1替换为192.168.1.253
-sed -i 's/192.168.1.1/192.168.1.253/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168.1.1/192.168.1.253/g' package/base-files/files/bin/config_generate
 
 #===================================================================================
 # 修改主机名字，把OpenWrt-123修改你喜欢的就行（不能纯数字或者使用中文）
