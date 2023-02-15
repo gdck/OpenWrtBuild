@@ -9,6 +9,9 @@
 # File name: diy-part2.sh
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
+#修改内核5.10
+sed -i ' s/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=5.10/g ' target/linux/x86/Makefile
+sed -i ' s/KERNEL_TESTING_PATCHVER:=5.4/KERNEL_TESTING_PATCHVER:=5.10/g ' target/linux/x86/Makefile
 #===================================================================================
 # Modify default IP 更改默认IP
 # 修改openwrt登陆地址,把下面的192.168.2.1修改成你想要的就可以了
