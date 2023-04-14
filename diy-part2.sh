@@ -10,8 +10,8 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 #修改内核5.10
-sed -i ' s/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=5.10/g ' target/linux/ramips/Makefile
-sed -i ' s/KERNEL_TESTING_PATCHVER:=5.4/KERNEL_TESTING_PATCHVER:=5.10/g ' target/linux/ramips/Makefile
+sed -i ' s/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=5.10/g ' target/linux/ramips/Makefile
+sed -i ' s/KERNEL_TESTING_PATCHVER:=5.10/KERNEL_TESTING_PATCHVER:=5.15/g ' target/linux/ramips/Makefile
 
 #===================================================================================
 # Modify default IP 更改默认IP
