@@ -51,6 +51,12 @@ sed 's/0x3f0000/0xff0000/g' target/linux/ath79/dts/ar9331_tplink_tl-wr703n_tl-mr
 svn co  https://github.com/gdck/luci-app-cupsd/trunk package/lean/luci-app-cupsd
 
 #===================================================================================
+#Openwrt 标准的软件中心linkease/istore
+git clone https://github.com/linkease/istore.git package/lean/istore
+./scripts/feeds update istore
+./scripts/feeds install -d y -p istore luci-app-store
+
+#===================================================================================
 # 获取应用过滤luci-app-oaf
 git clone https://github.com/destan19/OpenAppFilter package/lean/luci-app-oaf
 #git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
