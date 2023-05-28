@@ -50,10 +50,15 @@ sed 's/0x3f0000/0xff0000/g' target/linux/ath79/dts/ar9331_tplink_tl-wr703n_tl-mr
 
 #===================================================================================
 # 获取apple-cupsd打印机服务luci-app-cupsd 
-#git clone https://github.com/gdck/luci-app-cupsd.git package/lean/luci-app-cupsd
-svn co  https://github.com/gdck/luci-app-cupsd/trunk package/lean/luci-app-cupsd
+git clone https://github.com/gdck/luci-app-cupsd.git package/lean/luci-app-cupsd
+#svn co  https://github.com/gdck/luci-app-cupsd/trunk package/lean/luci-app-cupsd
 
-#===================================================================================
+#==============================================================================================
+# 获取 luci-app-virtualhere
+git clone https://github.com/gdck/luci-app-virtualhere.git package/lean/luci-app-virtualhere
+#svn co  https://github.com/gdck/luci-app-virtualhere/trunk package/lean/luci-app-virtualhere
+
+#==============================================================================================
 #Openwrt 标准的软件中心linkease/istore
 git clone https://github.com/linkease/istore.git package/lean/istore
 ./scripts/feeds update istore
