@@ -115,3 +115,7 @@ git clone https://github.com/gdck/luci-app-onliner package/lean/luci-app-onliner
 #svn co https://github.com/openwrt/luci/trunk/applications/luci-app-xinetd package/lean/luci-app-xinetd
 svn co https://github.com/gdck/openwrt-packages/trunk/luci-app-xinetd package/lean/luci-app-xinetd
 
+#===========================================================================================
+./scripts/feeds update  -a
+./scripts/feeds install -a
+
