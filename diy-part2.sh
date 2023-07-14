@@ -54,9 +54,9 @@ git clone https://github.com/gdck/luci-app-cupsd.git package/lean/luci-app-cupsd
 #svn co  https://github.com/gdck/luci-app-cupsd/trunk package/lean/luci-app-cupsd
 
 #==============================================================================================
-# 获取 luci-app-virtualhere 网络共享USB设备
-git clone https://github.com/gdck/luci-app-virtualhere.git package/lean/luci-app-virtualhere
-#svn co  https://github.com/gdck/luci-app-virtualhere/trunk package/lean/luci-app-virtualhere
+# 获取 luci-app-virtualhere luci-app-vhUSBService 网络共享USB设备
+git clone https://github.com/gdck/luci-app-vhUSBService.git package/lean/luci-app-vhUSBService
+#svn co  https://github.com/gdck/luci-app-vhUSBService/trunk package/lean/luci-app-vhUSBService
 
 #==============================================================================================
 #Openwrt 标准的软件中心linkease/istore
