@@ -102,8 +102,8 @@ svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-ser2net package/
 
 #==========================================================================================================
 # 获取luci-app-socat一个多功能的网络工具
-git clone https://github.com/nickilchen/luci-app-socat package/lean/luci-app-socat
-#svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-socat package/lean/luci-app-socat
+#git clone https://github.com/nickilchen/luci-app-socat package/lean/luci-app-socat
+svn co  https://github.com/gdck/openwrt-packages/trunk/luci-app-socat package/lean/luci-app-socat
 
 #==========================================================================================================
 # 获取通过arp实现的在线人员查看的luci界面，统计误差为arp老化时间
