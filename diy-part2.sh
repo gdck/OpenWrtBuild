@@ -56,7 +56,8 @@ git clone https://github.com/gdck/luci-app-cupsd.git package/lean/luci-app-cupsd
 #==============================================================================================
 # 获取 luci-app-virtualhere_luci-app-vhUSBService 网络共享USB设备
 #git clone https://github.com/gdck/luci-app-vhUSBService.git package/lean/luci-app-vhUSBService
-git clone https://github.com/love23o/luci-app-vhUSBService.git package/lean/luci-app-vhUSBService
+git clone https://github.com/gdck/luci-app-vhUSBService.git package/lean/luci-app-vhUSBService
+#git clone https://github.com/love23o/luci-app-vhUSBService.git package/lean/luci-app-vhUSBService
 #svn co  https://github.com/gdck/luci-app-vhUSBService/trunk package/lean/luci-app-vhUSBService
 
 #==============================================================================================
